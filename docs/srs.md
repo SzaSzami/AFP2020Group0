@@ -18,3 +18,12 @@ Ezek az eszközök képesek feldolgozni a választ, jóváhagyni vagy elutasíta
 képesek egyszerű válaszüzenetek nyomtatására a hibáról, ha van. Például, ha egy gyermek  szaunázni akar, 
 akkor a bejárati kapu elutasítja a kérését. Egy másik forgatókönyv szerint, ha egy 17 éves akar fizetni
 akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
+
+## **Jelenlegi helyzet**
+
+**A mostani helyzet általános problémái:**
+- Hosszadalmas fizetési módszerek
+- Az ügyfélnek mindenhova magával kell vinnie a bankkártyát, vagy készpénzt
+- Több élőerőt kell alkalmazni, mint a teljesen automatizált rendszerünknél
+- Vendégek személyes adatai védve vannak, csak az és csak annyit lát, akinek feltétlen szükséges
+- Rendkívül könnyű számla rendezés

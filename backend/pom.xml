@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>AFP2020</groupId>
+  <groupId>AFP2020Group0</groupId>
   <artifactId>backend</artifactId>
   <version>1.0.21-SNAPSHOT</version>
 
@@ -168,7 +168,7 @@
                 <goal>repackage</goal>
               </goals>
               <configuration>
-                <mainClass>AFP2020APP</mainClass>
+                <mainClass>hu.uni.eku.tzs.App</mainClass>
               </configuration>
             </execution>
           </executions>

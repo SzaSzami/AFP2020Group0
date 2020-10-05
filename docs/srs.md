@@ -15,7 +15,7 @@ Mások automatizált szolgáltatások, mint például a szauna.
 
 Az órák és az olvasók már telepítve vannak, és az interneten keresztül kommunikálnak a rendszerrel.
 Ezek az eszközök képesek feldolgozni a választ, jóváhagyni vagy elutasítani a tranzakciót. Ezen eszközök
-képesek egyszerű válaszüzenetek nyomtatására a hibáról, ha van. Például, ha egy gyermek  szaunázni akar, 
+képesek egyszerű válasz üzenetek nyomtatására a hibáról, ha van. Például, ha egy gyermek  szaunázni akar, 
 akkor a bejárati kapu elutasítja a kérését. Egy másik forgatókönyv szerint, ha egy 17 éves akar fizetni
 akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
 

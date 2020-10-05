@@ -22,11 +22,11 @@ akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
 ## **Jelenlegi helyzet**
 
 **A mostani helyzet általános problémái:**
-- Hosszadalmas fizetési módszerek
-- Az ügyfélnek mindenhova magával kell vinnie a bankkártyát, vagy készpénzt
-- Több élőerőt kell alkalmazni, mint a teljesen automatizált rendszerünknél
-- Vendégek személyes adatai védve vannak, csak az és csak annyit lát, akinek feltétlen szükséges
-- Rendkívül könnyű számla rendezés
+- Hosszadalmas fizetési módszerek.
+- Az ügyfélnek mindenhova magával kell vinnie a bankkártyát, vagy készpénzt.
+- Több élőerőt kell alkalmazni, mint a teljesen automatizált rendszerünknél.
+- Vendégek személyes adatai nem biztos, hogy védve vannak.
+- Számla rendezés bonyolult lehet.
 
 ## Vágyálom rendszer
 
@@ -53,8 +53,17 @@ kezelnie kell, hogy tudja.
 ### Rendszer specifikációs álmok.
 
  A program müködtetésére szolgáló eszközök az alábbiak lesznek: 
--Egy leolvasó, ami fix helyekre, valamint mobil változatban is elérhető lesz.
--Egy karóra-szerű microchip-et tartalmazó szerkezet, amelyet a vendégek
+- Egy leolvasó, ami fix helyekre, valamint mobil változatban is elérhető lesz.
+- Egy karóra-szerű microchip-et tartalmazó szerkezet, amelyet a vendégek
 hordanak a karukon, lehetővé téve a rendszer használatát.
--Szoftver, amivel a belső felhasználói, valamint az admin műveleteket lehet 
+- Szoftver, amivel a belső felhasználói, valamint az admin műveleteket lehet 
 elvégzezni.
+
+## Követelmény lista
+ *A rendszer tulajdonságai:*
+ - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell.
+ - Képes lekérdezni az adatokat egy külső eszköz segítségével.
+ - Képes szolgáltatások esetleges elutasítására.
+ - Felhasználóbarát hibaüzenetek ad vissza.
+ - Képes közös számlát kiállítani több ügyfélnek együttesen.
+ - Kijelentkezéskor a felszabadult azonosítókat új embereknek rendeli hozzá.

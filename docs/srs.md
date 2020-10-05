@@ -28,7 +28,7 @@ akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
 - Vendégek személyes adatai nem biztos, hogy védve vannak.
 - Számla rendezés bonyolult lehet.
 
-## Vágyálom rendszer
+## **Vágyálom rendszer**
 
 ### Terjedés, az az kik fogják használni a rendszert:
 
@@ -59,7 +59,7 @@ hordanak a karukon, lehetővé téve a rendszer használatát.
 - Szoftver, amivel a belső felhasználói, valamint az admin műveleteket lehet 
 elvégzezni.
 
-## Követelmény lista
+## **Követelmény lista**
  *A rendszer tulajdonságai:*
  - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell.
  - Képes lekérdezni az adatokat egy külső eszköz segítségével.
@@ -67,3 +67,19 @@ elvégzezni.
  - Felhasználóbarát hibaüzenetek ad vissza.
  - Képes közös számlát kiállítani több ügyfélnek együttesen.
  - Kijelentkezéskor a felszabadult azonosítókat új embereknek rendeli hozzá.
+ 
+## **Funkcionális követelmény**
+
+### *A belső felhasználók lehetőségei:*
+ - A recepciós viszi be az adatokat, ő rendeli az emberekhez az azonosítót.
+ - A pincér lekérheti az illető korát.
+ - A pénzügyes kérheti le a fizetési adatok, és elkészíti a számlát.
+ 
+### *A felhasználók lehetőségei:*
+ - Lehetőségük van azonosítás után a szolgáltatásokat igénybevenni.
+ - Egyes hibaüzenetek esetén saját maguk is elháríthatják a hibákat.
+ 
+### *Az adminok lehetőségei:*
+- Minden, a rendszer által nyújtott szolgáltatáshoz joguk van.
+
+A rendszer fejlesztői: Dudás Botond, Tóth Szabina, Barna Bence, Négyesi Imre

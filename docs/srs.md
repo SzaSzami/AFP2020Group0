@@ -82,4 +82,4 @@ elvégzezni.
 ### *Az adminok lehetőségei:*
 - Minden, a rendszer által nyújtott szolgáltatáshoz joguk van.
 
-A rendszer fejlesztői: Dudás Botond, Tóth Szabina, Barna Bence, Négyesi Imre
+A rendszer fejlesztői: Dudás Botond, Tóth Szabina, Barna Bence, Négyesi Imre.

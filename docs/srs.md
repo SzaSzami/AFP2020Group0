@@ -27,3 +27,34 @@ akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
 - Több élőerőt kell alkalmazni, mint a teljesen automatizált rendszerünknél
 - Vendégek személyes adatai védve vannak, csak az és csak annyit lát, akinek feltétlen szükséges
 - Rendkívül könnyű számla rendezés
+
+## Vágyálom rendszer
+
+### Terjedés, az az kik fogják használni a rendszert:
+
+ A program egyaránt a szálloda üzemeltetőinek, és vendégeinek is készül. 
+ A vendégeknek a gyors és akadálymentes fizetés, a szállodának a könnyű nyomon-
+  követés, valamint a törvényi kötelezettségek betartása az érdeke. 
+  Előreláthatólag három jogosultsági szint lesz, admin, belső felhasználó, és
+  felhasználó.
+  
+### A szoftvernek egyértelmű üzeneteket kell küldenie.
+ 
+A vendégektől nem várható el, hogy számukra értelmezhetetlen üzeneteket
+kapjanak egy esetleges hibáról, ezt széleskörűen kell unit-tesztelni a 
+szoftvert, és minden felmerülő problémáról egyértelmű üzenetet kell kapniuk.
+ 
+### A későbbiekben a szálloda bővülhet.
+
+A rendszernek fel kell készülnie rá, hogy új funkciók, új helyek kerülhetnek
+a szálloda szolgáltatásai közé, ezeket esetleg egy minimális frissítéssel
+kezelnie kell, hogy tudja.
+
+### Rendszer specifikációs álmok.
+
+ A program müködtetésére szolgáló eszközök az alábbiak lesznek: 
+-Egy leolvasó, ami fix helyekre, valamint mobil változatban is elérhető lesz.
+-Egy karóra-szerű microchip-et tartalmazó szerkezet, amelyet a vendégek
+hordanak a karukon, lehetővé téve a rendszer használatát.
+-Szoftver, amivel a belső felhasználói, valamint az admin műveleteket lehet 
+elvégzezni.

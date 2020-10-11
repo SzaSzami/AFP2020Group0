@@ -61,23 +61,24 @@ elvégzezni.
 
 ## **Követelmény lista**
  *A rendszer tulajdonságai:*
- - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell.
- - Képes lekérdezni az adatokat egy külső eszköz segítségével.
- - Képes szolgáltatások esetleges elutasítására.
- - Felhasználóbarát hibaüzenetek ad vissza.
- - Képes közös számlát kiállítani több ügyfélnek együttesen.
+ - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell. - int(UID) | string(name) | int(age) | bool(TypeOfWatch)
+ - Képes lekérdezni az adatokat egy külső eszköz segítségével. - int(UID) | string(name) | int(age)
+ - Képes szolgáltatások esetleges elutasítására az automatikus kor ellenőrző segíségével. - int(UID) | bool(allowed)
+ - Nem automatizált rendszer esetén az automatikus kor ellenőrző figyelmezteti a kiszolgálót, ha szükséges. - int(UID) | bool(allowed)
+ - Felhasználóbarát hibaüzenetek ad vissza, jelzi a hibát az üzemeltetőnek is. - int(EID) | int(UID) | string(ErrorMessage)
+ - Képes közös számlát kiállítani több ügyfélnek együttesen, a karórákon lévő összeg alapján. - int(UID) | int(TotalBill) | int(IndividualBill)
  - Kijelentkezéskor a felszabadult azonosítókat új embereknek rendeli hozzá.
  
 ## **Funkcionális követelmény**
 
 ### *A belső felhasználók lehetőségei:*
- - A recepciós viszi be az adatokat, ő rendeli az emberekhez az azonosítót.
- - A pincér lekérheti az illető korát.
- - A pénzügyes kérheti le a fizetési adatok, és elkészíti a számlát.
+ - A recepciós viszi be az adatokat, ő rendeli az emberekhez az azonosítót. - int(UID) | string(name) | int(age) | bool(TypeOfWatch)
+ - A pincér lekérheti az illető korát, a kora ellenőrzéséhez. - int(UID) | int(age)
+ - A pénzügyes kérheti le a fizetési adatok, és elkészíti a számlát. - int(UID) | int(TotalBill) | int(IndividualBill) | string(invoice)
  
 ### *A felhasználók lehetőségei:*
- - Lehetőségük van azonosítás után a szolgáltatásokat igénybevenni.
- - Egyes hibaüzenetek esetén saját maguk is elháríthatják a hibákat.
+ - Lehetőségük van azonosítás után a szolgáltatásokat igénybevenni. - int(UID) | int(age)
+ - Egyes hibaüzenetek esetén saját maguk is elháríthatják a hibákat, jelzi a hibát az üzemeltetőnek. - int(EID) | int(UID) | string(exception)
  
 ### *Az adminok lehetőségei:*
 - Minden, a rendszer által nyújtott szolgáltatáshoz joguk van.

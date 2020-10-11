@@ -78,7 +78,7 @@ elvégzezni.
  
 ### *A felhasználók lehetőségei:*
  - Lehetőségük van azonosítás után a szolgáltatásokat igénybevenni. - int(UID) | int(age)
- - Egyes hibaüzenetek esetén saját maguk is elháríthatják a hibákat, jelzi a hibát az üzemeltetőnek. - int(EID) | int(UID)
+ - Egyes hibaüzenetek esetén saját maguk is elháríthatják a hibákat, jelzi a hibát az üzemeltetőnek. - int(EID) | int(UID) | string(exception)
  
 ### *Az adminok lehetőségei:*
 - Minden, a rendszer által nyújtott szolgáltatáshoz joguk van.

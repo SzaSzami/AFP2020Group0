@@ -3,8 +3,8 @@ package hu.uni.eku.tzs.controller;
 import hu.uni.eku.tzs.controller.dto.BillDto;
 import hu.uni.eku.tzs.controller.dto.BillRequestDto;
 import hu.uni.eku.tzs.model.Bill;
-import hu.uni.eku.tzs.service.ComplexNumberService;
-import hu.uni.eku.tzs.service.exceptions.ComplexNumberAlreadyExistsException;
+import hu.uni.eku.tzs.service.BillService;
+import hu.uni.eku.tzs.service.exceptions.BillAlreadyExistsException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -36,7 +36,7 @@ public class BillController {
         log.info("Recording of Bill ({},{},{},{})",request.getOwner(),request.getUsers(), getEndsum(), getEndstamp());
         try {
             service.record(new Bill(request.getOwner(),request.getUsers(), getEndsum(), getEndstamp()));
-        } catch (ComplexNumberAlreadyExistsException e) {
+        } catch (BillAlreadyExistsException e) {
             log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), getEndsum(), getEndstamp(), e.getMessage());
             throw new ResponseStatusException(
                     HttpStatus.CONFLICT,

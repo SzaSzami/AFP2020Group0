@@ -14,5 +14,4 @@ public class GuestRecordRequestDto {
     private int id;
     private String name;
     private int age;
-    private boolean typeofwatch;
 }

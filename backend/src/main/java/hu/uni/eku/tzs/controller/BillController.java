@@ -33,11 +33,11 @@ public class BillController {
             @RequestBody
                     BillRequestDto request
     ){
-        log.info("Recording of Bill ({},{},{},{})",request.getOwner(),request.getUsers(), getEndsum(), getEndstamp());
+        log.info("Recording of Bill ({},{},{},{})",request.getOwner(), request.getUsers(), request.getEndsum(), request.getEndstamp());
         try {
-            service.record(new Bill(request.getOwner(),request.getUsers(), getEndsum(), getEndstamp()));
+            service.record(new Bill(request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp()));
         } catch (BillAlreadyExistsException e) {
-            log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), getEndsum(), getEndstamp(), e.getMessage());
+            log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp(), e.getMessage());
             throw new ResponseStatusException(
                     HttpStatus.CONFLICT,
                     e.getMessage()

@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class ComplexNumberDto {
+public class GuestDto {
 
     private int id;
     private String name;

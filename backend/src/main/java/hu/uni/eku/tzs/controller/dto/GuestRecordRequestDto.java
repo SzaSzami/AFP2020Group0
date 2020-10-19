@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ComplexNumberDto {
+public class GuestRecordRequestDto {
 
     private int id;
     private String name;

@@ -1,6 +1,6 @@
 package hu.uni.eku.tzs.controller;
 
-import hu.uni.eku.tzs.controller.dto.GuestNumberDto;
+import hu.uni.eku.tzs.controller.dto.GuestDto;
 import hu.uni.eku.tzs.controller.dto.GuestRecordRequestDto;
 import hu.uni.eku.tzs.model.Guest;
 import hu.uni.eku.tzs.service.GuestService;

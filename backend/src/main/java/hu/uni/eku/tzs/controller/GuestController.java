@@ -33,9 +33,9 @@ public class GuestController {
             @RequestBody
                     GuestRecordRequestDto request
     ){
-        log.info("Guest's information: {}, {}, {}, {}",request.getId(),request.getName(),request.getAge());
+        log.info("Guest's information:  {}, {}",request.getName(),request.getAge());
         try {
-            service.record(new Guest(request.getId(),request.getName(),request.getAge()));
+            service.record(new Guest(request.getName(),request.getAge()));
         } catch (GuestAlreadyExistsException e) {
             log.info("Guest {}, {} is already exists! Message: {}", request.getName(),request.getAge(), e.getMessage());
             throw new ResponseStatusException(
@@ -51,7 +51,6 @@ public class GuestController {
     public Collection<GuestDto> query(){
         return service.readAll().stream().map(model ->
                 GuestDto.builder()
-                .id(model.getId())
                 .name(model.getName())
                 .age(model.getAge())
                 .build()

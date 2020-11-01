@@ -17,7 +17,7 @@ public class Guest {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @Column
-    private String Name = new String();
+    private String name;
     @Column
     private int Age;
 }

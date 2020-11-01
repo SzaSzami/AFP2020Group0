@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Guest {
 
-    private int id;
-    private String name = new String();
+    private String name();
     private int age;
 }

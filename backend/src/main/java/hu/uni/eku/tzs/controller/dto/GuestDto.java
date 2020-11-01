@@ -7,7 +7,6 @@ import lombok.Data;
 @Builder
 public class GuestDto {
 
-    private int id;
     private String name;
     private int age;
 }

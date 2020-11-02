@@ -7,7 +7,7 @@ import java.util.Collection;
 
 public interface BillService {
 
-    void record(Bill bill) throws BillAlreadyExistsException;
+    void generate(Bill bill) throws BillAlreadyExistsException;
 
     Collection<Bill> readAll();
 }

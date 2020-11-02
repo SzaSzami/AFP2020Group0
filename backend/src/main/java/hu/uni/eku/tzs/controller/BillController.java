@@ -27,15 +27,15 @@ public class BillController {
 
     private final BillService service;
 
-    @PostMapping("/record")
-    @ApiOperation(value = "Record")
-    public void record(
+    @PostMapping("/generate")
+    @ApiOperation(value = "Generate")
+    public void generate(
             @RequestBody
                     BillRequestDto request
     ){
-        log.info("Recording of Bill ({},{},{},{})",request.getOwner(), request.getUsers(), request.getEndsum(), request.getEndstamp());
+        log.info("Generating bill ({},{},{},{})",request.getOwner(), request.getUsers(), request.getEndsum(), request.getEndstamp());
         try {
-            service.record(new Bill(request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp()));
+            service.generate(new Bill(request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp()));
         } catch (BillAlreadyExistsException e) {
             log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp(), e.getMessage());
             throw new ResponseStatusException(

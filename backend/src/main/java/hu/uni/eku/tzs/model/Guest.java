@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Guest {
 
-    private String name();
+    private String name;
     private int age;
 }

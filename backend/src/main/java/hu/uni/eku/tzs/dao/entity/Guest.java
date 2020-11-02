@@ -19,5 +19,5 @@ public class Guest {
     @Column
     private String name;
     @Column
-    private int Age;
+    private int age;
 }

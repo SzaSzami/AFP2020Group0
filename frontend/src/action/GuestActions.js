@@ -1,15 +1,15 @@
 import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
-import * as actionConstants from '../dispatcher/ComplexNumberActionConstants'
+import * as actionConstants from '../dispatcher/GuestActionConstants'
 
-export const recordComplexNumber = ({real,imag}) =>{
-    axios.post('/complex-number/record',
+export const recordGuest = ({name,age}) =>{
+    axios.post('/guest/record',
         {
-            real : real,
-            imag : imag
+            name : name,
+            age : age
         })
         .then(() => {
-            fetchComplexNumbers();
+            fetchGuest();
             dispatcher.dispatch({action : actionConstants.clearError});
         })
         .catch((err) => {
@@ -17,13 +17,13 @@ export const recordComplexNumber = ({real,imag}) =>{
                 action : actionConstants.showError,
                 payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
             });
-            fetchComplexNumbers();
+            fetchGuest();
         });
 }
 
-export const fetchComplexNumbers = () =>{
+export const fetchGuest = () =>{
 
-    axios.get('/complex-number/').then((resp)=>{
+    axios.get('/guest/').then((resp)=>{
         dispatcher.dispatch({
             action : actionConstants.refresh,
             payload: resp.data

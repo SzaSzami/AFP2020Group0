@@ -1,12 +1,12 @@
 import React from 'react';
-import {default as store} from '../store/ComplexNumberStore'
-import ComplexNumberListItem from "./ComplexNumberListItem";
+import {default as store} from '../store/GuestStore'
+import GuestListItem from "./GuestListItem";
 
-class ComplexNumberList extends React.Component{
+class GuestList extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {complexNumbers : []};
+        this.state = {guests : []};
         this._updateState = this._updateState.bind(this);
     }
 
@@ -21,15 +21,15 @@ class ComplexNumberList extends React.Component{
     }
 
     _updateState(){
-        this.setState({complexNumbers : store._complexNumbers});
+        this.setState({guests : store._guests});
     }
 
     render() {
         return(
             <div>
-                {this.state.complexNumbers.map(({real,imaginary}, index)=>{
+                {this.state.guests.map(({name,age}, index)=>{
                     return(
-                        <ComplexNumberListItem key={index} real={real} imaginary={imaginary}/>
+                        <GuestListItem key={index} name={name} age={age}/>
                 );
                 })}
             </div>
@@ -37,4 +37,4 @@ class ComplexNumberList extends React.Component{
     }
 }
 
-export default ComplexNumberList;
+export default GuestList;

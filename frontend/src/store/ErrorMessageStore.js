@@ -1,6 +1,6 @@
 import {EventEmitter} from 'events';
 import {default as dispatcher} from '../dispatcher/Dispatcher';
-import * as actionConstants from '../dispatcher/ComplexNumberActionConstants'
+import * as actionConstants from '../dispatcher/GuestActionConstants'
 
 class ErrorMessageStore extends EventEmitter{
 

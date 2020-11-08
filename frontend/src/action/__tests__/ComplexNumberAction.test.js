@@ -1,11 +1,11 @@
-jest.dontMock('../ComplexNumberActions');
-import  * as actions from '../ComplexNumberActions';
+jest.dontMock('../GuestActions');
+import  * as actions from '../GuestActions';
 jest.mock('axios');
 import axios from 'axios';
 jest.mock('../../dispatcher/Dispatcher')
 import dispatcher from "../../dispatcher/Dispatcher";
 
-describe('Tests for ComplexNumberAction', ()=>{
+describe('Tests for GuestAction', ()=>{
 
 
     beforeEach(()=>{
@@ -17,14 +17,14 @@ describe('Tests for ComplexNumberAction', ()=>{
     });
 
 
-    it('checks if the complex number recorded successfully', ()=>{
+    it('checks if the guest recorded successfully', ()=>{
         axios.post.mockReturnValue(Promise.resolve());
-        actions.recordComplexNumber({real:0, imag:0});
+        actions.recordGuest({name:"Test Name", age:"1992-11-21"});
         expect(axios.post).toHaveBeenCalledTimes(1);
 
     });
 
-    it('checks the recording of existing complex number', ()=>{
+    it('checks the recording of existing guest', ()=>{
         axios.post.mockReturnValue(Promise.reject({
             response : {
                 status : 409,
@@ -35,7 +35,7 @@ describe('Tests for ComplexNumberAction', ()=>{
             }
         }));
         dispatcher.dispatch();
-        actions.recordComplexNumber({real:0, imag:0});
+        actions.recordGuest({name:"Test Name", age:"1992-11-21"});
         expect(axios.post).toHaveBeenCalledTimes(1);
         expect(dispatcher.dispatch).toHaveBeenCalledTimes(1);
     });

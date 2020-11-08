@@ -1,10 +1,10 @@
 import {EventEmitter} from 'events'
 import dispatcher from "../dispatcher/Dispatcher";
-import {refresh} from '../dispatcher/ComplexNumberActionConstants';
+import {refresh} from '../dispatcher/GuestActionConstants';
 
-class ComplexNumberStore extends EventEmitter{
+class GuestStore extends EventEmitter{
 
-    _complexNumbers = [];
+    _guests = [];
 
     emitChange(){
         this.emit('Change');
@@ -19,11 +19,11 @@ class ComplexNumberStore extends EventEmitter{
     }
 }
 
-const store = new ComplexNumberStore();
+const store = new GuestStore();
 export default store;
 
 dispatcher.register(({action,payload})=>{
     if(action !== refresh ) return;
-    store._complexNumbers = payload;
+    store._guests = payload;
     store.emitChange();
 })

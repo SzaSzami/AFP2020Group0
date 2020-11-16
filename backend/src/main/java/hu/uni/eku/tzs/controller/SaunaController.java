@@ -1,13 +1,8 @@
 package hu.uni.eku.tzs.controller;
 
-import hu.uni.eku.tzs.controller.dto.GuestDto;
 import hu.uni.eku.tzs.controller.dto.GuestEnterRequestDto;
 import hu.uni.eku.tzs.controller.dto.SaunaDto;
-import hu.uni.eku.tzs.model.Enter;
-import hu.uni.eku.tzs.model.Guest;
-import hu.uni.eku.tzs.service.GuestService;
 import hu.uni.eku.tzs.service.SaunaService;
-import hu.uni.eku.tzs.service.exceptions.GuestAlreadyExistsException;
 import hu.uni.eku.tzs.service.exceptions.GuestTooYoungException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -38,7 +33,7 @@ public class SaunaController {
     ){
         log.info("Enter information:  {}, {}, {}",request.getName(),request.getAge(),request.getDate());
         try {
-            service.Enter(new Enter(request.getName(), request.getAge(), request.getDate()));
+            service.Enter(request.getName(), request.getAge(), request.getDate());
         } catch (GuestTooYoungException e) {
             log.info("Guest {}, {} can not use the sauna! Message: {}", request.getName(),request.getAge(), e.getMessage());
             throw new ResponseStatusException(

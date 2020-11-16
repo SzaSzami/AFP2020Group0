@@ -33,11 +33,11 @@ public class BillController {
             @RequestBody
                     BillRequestDto request
     ){
-        log.info("Generating bill ({},{},{},{})",request.getOwner(), request.getUsers(), request.getEndsum(), request.getEndstamp());
+        log.info("Generating bill ({},{},{},{})",request.getOwner(), request.getUsers(), request.getItems(), request.getEndstamp());
         try {
-            service.generate(new Bill(request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp()));
+            service.generate(new Bill(request.getOwner(),request.getUsers(), request.getItems(), request.getEndstamp()));
         } catch (BillAlreadyExistsException e) {
-            log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), request.getEndsum(), request.getEndstamp(), e.getMessage());
+            log.info("Bill ({},{},{},{})  already exists! Message: {}", request.getOwner(),request.getUsers(), request.getItems(), request.getEndstamp(), e.getMessage());
             throw new ResponseStatusException(
                     HttpStatus.CONFLICT,
                     e.getMessage()
@@ -53,7 +53,7 @@ public class BillController {
                 BillDto.builder()
                         .owner(model.getOwner())
                         .users(model.getUsers())
-                        .endsum(model.getEndsum())
+                        .items(model.getItems())
                         .endstamp(model.getEndstamp())
                         .build()
         ).collect(Collectors.toList());

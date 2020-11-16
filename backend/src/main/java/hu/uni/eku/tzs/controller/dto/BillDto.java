@@ -13,6 +13,6 @@ public class BillDto {
 
     private UUID owner;
     private List<UUID> users;
-    private int endsum;
+    private List<String> items;
     private Date endstamp;
 }

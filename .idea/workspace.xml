@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a428bb8-4520-4da2-a5bb-3fd3083e2e0b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\IntelliJ\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jhY3ze2MBnpZMDc4WNDC9Rf9o1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a428bb8-4520-4da2-a5bb-3fd3083e2e0b" name="Default Changelist" comment="" />
+      <created>1604257599493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604257599493</updated>
+      <workItem from="1604257603029" duration="103000" />
+      <workItem from="1604308335367" duration="160000" />
+      <workItem from="1604315980047" duration="983000" />
+      <workItem from="1604760467164" duration="63000" />
+      <workItem from="1605009205195" duration="209000" />
+      <workItem from="1605021855307" duration="753000" />
+      <workItem from="1605084402391" duration="34000" />
+      <workItem from="1605530855137" duration="303000" />
+      <workItem from="1605533465592" duration="665000" />
+      <workItem from="1605534502046" duration="31000" />
+      <workItem from="1605535318015" duration="1103000" />
+      <workItem from="1605641395816" duration="3205000" />
+      <workItem from="1605648680516" duration="2637000" />
+      <workItem from="1605651526199" duration="642000" />
+      <workItem from="1605652806955" duration="2019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1605645930650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1605645930650" />
+    <state x="193" y="32" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605649137168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="23" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1604316021183" />
+    <state x="193" y="32" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605649137168" />
+    <state x="538" y="245" key="#com.jetbrains.plugins.reactnative.ReactNativePackagerConfigurationEditor" timestamp="1605649003314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="538" y="245" key="#com.jetbrains.plugins.reactnative.ReactNativePackagerConfigurationEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605649003314" />
+    <state x="632" y="147" key="FileChooserDialogImpl" timestamp="1605652840515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2341" y="96" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.680@1920.0.1280.680" timestamp="1605021984619" />
+    <state x="632" y="147" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605652840515" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605651513772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605651513772" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605651513771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605651513771" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605651513771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605651513771" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605651513771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605651513771" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605533527143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605533527143" />
+    <state x="551" y="140" key="new project wizard" timestamp="1605643165367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605643165367" />
+  </component>
+</project>

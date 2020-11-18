@@ -16,7 +16,7 @@ import java.util.UUID;
 public class BillRequestDto {
 
     private UUID owner;
-    private List<UUID> users;
-    private List<String> items;
+    private String users;
+    private String items;
     private Date endstamp;
 }

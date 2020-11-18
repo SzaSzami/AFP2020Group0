@@ -12,7 +12,7 @@ import java.util.UUID;
 public class BillDto {
 
     private UUID owner;
-    private List<UUID> users;
-    private List<String> items;
+    private String users;
+    private String items;
     private Date endstamp;
 }

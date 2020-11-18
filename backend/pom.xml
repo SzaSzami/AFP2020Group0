@@ -4,13 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>AFP2020_autumn_teamA</groupId>
+  <groupId>AFP2020Group0</groupId>
   <artifactId>backend</artifactId>
-  <version>1.0.21-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
 
   <name>backend</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/DBotond/AFP2020Group0</url>
 
   <properties>
     <github.global.server>github</github.global.server>
@@ -32,7 +31,7 @@
     <repository>
       <id>github</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/MartonPeterMarton/AFP2020_autumn_teamA</url>
+      <url>https://maven.pkg.github.com/DBotond/AFP2020Group0</url>
     </repository>
   </distributionManagement>
 

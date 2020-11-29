@@ -1,0 +1,41 @@
+@startuml
+package Services as serv {
+(Age restricted services) as ageserv
+(Unrestricted services) as unrestserv
+  rectangle Enforcement as enf {
+  (Human labour) as hum
+  (Mechanized enforcement) as auto
+  }
+}
+
+rectangle CheckIn {
+:User(UID): as User
+(Type of watch) as tow
+}
+
+note top of tow
+  Can be Adult or Underage.
+  Limits the available services.
+end note
+
+rectangle CheckOut {
+(Bill) as bill
+(Simple invoice) as simple
+(Detailed invoice) as detailed
+}
+
+note bottom of simple : Gives only the total sum needed to pay.
+note bottom of detailed : Shows the detailed consumption.
+
+User -right-> bill
+User -left-> tow
+bill --> detailed
+bill --> simple
+tow --> ageserv
+tow --> unrestserv
+auto --> tow
+hum --> tow
+
+note bottom of hum : e.g. Bartender receives a warning about the client being an underage.
+note bottom of auto : e.g. Automated sauna gate approves or rejects the entrance request.
+@enduml

@@ -7,6 +7,7 @@ class GuestRecordingForm extends React.Component{
         super(props);
         this.state = {
             name : "E.g. Peter Bonnington",
+            age : "E.g. 23"
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
@@ -24,7 +25,7 @@ class GuestRecordingForm extends React.Component{
                     <input type={"text"} id={"name"} name={"name"} style={{marginLeft: 1 + 'em'}} placeholder={this.state.name} onChange={this.formOnChange}/>
                     <br/>
                     <label htmlFor={"age"}>Age: </label>
-                    <input type={"number"} id={"age"} name={"age"} style={{marginLeft: 1.9 + 'em'}} min="1901-01-01" max="2021-01-01" onChange={this.formOnChange}/>
+                    <input type={"number"} id={"age"} name={"age"} style={{marginLeft: 1.9 + 'em'}} placeholder={this.state.age} onChange={this.formOnChange}/>
                     <br/><br/>
                     <button onClick={()=> actions.recordGuest(this.state)}>Submit</button>
             </div>

@@ -10,12 +10,13 @@ function App() {
   return (
     <div className={["App","container"]}>
         <div className={"row"}>
-            <div className={"col-md-3"}></div>
-            <form className={"col-md-6"}>
+            <div className={"col-md-3"}>
+            </div>
+            <div className={"col-md-6"}>
                 <h1 style={{marginTop: 1 + 'em'}}>Guest details:</h1><br/>
                 <GuestRecordingForm/>
                 <GuestList/>
-            </form>
+            </div>
             <div className={"col-md-3"}></div>
         </div>
     </div>

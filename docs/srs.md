@@ -27,6 +27,7 @@ akar az alkoholért, akkor a csapos üzenetet kap a korlátozásról.
 - Több élőerőt kell alkalmazni, mint a teljesen automatizált rendszerünknél.
 - Vendégek személyes adatai nem biztos, hogy védve vannak.
 - Számla rendezés bonyolult lehet.
+- Azonosítás nem biztos emberi tényezők miatt
 
 ## **Vágyálom rendszer**
 
@@ -59,16 +60,6 @@ hordanak a karukon, lehetővé téve a rendszer használatát.
 - Szoftver, amivel a belső felhasználói, valamint az admin műveleteket lehet 
 elvégzezni.
 
-## **Követelmény lista**
- *A rendszer tulajdonságai:*
- - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell. - int(UID) | string(name) | int(age) | bool(TypeOfWatch)
- - Képes lekérdezni az adatokat egy külső eszköz segítségével. - int(UID) | string(name) | int(age)
- - Képes szolgáltatások esetleges elutasítására az automatikus kor ellenőrző segíségével. - int(UID) | bool(allowed)
- - Nem automatizált rendszer esetén az automatikus kor ellenőrző figyelmezteti a kiszolgálót, ha szükséges. - int(UID) | bool(allowed)
- - Felhasználóbarát hibaüzenetek ad vissza, jelzi a hibát az üzemeltetőnek is. - int(EID) | int(UID) | string(ErrorMessage)
- - Képes közös számlát kiállítani több ügyfélnek együttesen, a karórákon lévő összeg alapján. - int(UID) | int(TotalBill) | int(IndividualBill)
- - Kijelentkezéskor a felszabadult azonosítókat új embereknek rendeli hozzá.
- 
 ## **Funkcionális követelmény**
 
 ### *A belső felhasználók lehetőségei:*
@@ -82,5 +73,41 @@ elvégzezni.
  
 ### *Az adminok lehetőségei:*
 - Minden, a rendszer által nyújtott szolgáltatáshoz joguk van.
+
+## **Jelenlegi üzleti folyamatok modellje**
+A jelenlegi rendszer nagy munkaerőt kíván egy-egy munkatárs elvesztése kritikus lehet.
+Az ügyfeleknek figyelniük kell értékeikre mivel fizetőeszközeiket nem hagyhatják egy zárható szekrényben
+hiszen azok nélkül a különböző szolgáltatások igénybevétele nem lenne lehetséges. Sok vásárló
+ezért kevés szolgáltatást vesz igénybe vagy akár egyántalán nem, csak az alapokat.
+
+## **Igényelt üzleti folyamatok**
+Az ügyfelek karórát kapnak, amit használhatnak a különféle szolgáltatások igénybevételéhez.
+A kerórák kortól függően vannak beállítva, hogy a korhoz kötött szolgáltatásokat ne tudja bárki elérni.
+Távozáskor igény szerint a rendszer számlát állít ki, amin követhető, hogy ki milyen szolgáltatásokat vett
+igénybe, valamint a fizetés is utólag teljesül, hogy minél szabadabb legyen az egyes szolgáltatások igénybevétele.
+
+## **Követelmény lista**
+ *A rendszer tulajdonságai:*
+ - Tartalmazza a vendégek adatait, de csak annyit, amennyi a rendszerhez kell. - int(UID) | string(name) | int(age) | bool(TypeOfWatch)
+ - Képes lekérdezni az adatokat egy külső eszköz segítségével. - int(UID) | string(name) | int(age)
+ - Képes szolgáltatások esetleges elutasítására az automatikus kor ellenőrző segíségével. - int(UID) | bool(allowed)
+ - Nem automatizált rendszer esetén az automatikus kor ellenőrző figyelmezteti a kiszolgálót, ha szükséges. - int(UID) | bool(allowed)
+ - Felhasználóbarát hibaüzenetek ad vissza, jelzi a hibát az üzemeltetőnek is. - int(EID) | int(UID) | string(ErrorMessage)
+ - Képes közös számlát kiállítani több ügyfélnek együttesen, a karórákon lévő összeg alapján. - int(UID) | int(TotalBill) | int(IndividualBill)
+ - Kijelentkezéskor a felszabadult azonosítókat új embereknek rendeli hozzá.
+ 
+Modul | ID | Név | v. | Kifejtés
+--- | --- | --- | --- |---
+Jogosultság | F1 | Ügyfél adatainak megadása | 1.0 | Ügyfél nevének és életkorának tárolása, karórához való hozzárendelése
+Jogosultság | F2 | Jogosultsági szintek | 1.0 | Felnőtt(18+): Mindent szolgáltatást igénybevehet<br/>Gyermek: Korhatáros szolgáltatásokhoz nem kap hozzáférést
+Modifikáció | F3 | Ügyfél adatainak változtatása | 1.0 | Ügyfél nevének és életkorának változtatása
+Igénybevétel | F4 | Gépi igénybevétel | 1.0 | Ajtó nyitása, automatás vásárlás korhatáros szolgáltatás esetén csak a megfelelő karórának
+Igénybevétel | F5 | Emberi igénybevétel | 1.0 | Szolgáltatásoknál ahol szükséges munkatársat alkalmazni, ellátni egy leolvasó eszközzel
+Igénybevétel | F6 | Számlázás | 1.0 | Szolgáltatás igénybevétele esetén fizetendő összeg hozzáadása az órához tartozó számlához
+Ügyintézés | F7 | Számla kiállítás | 1.0 | Az igénybevett szolgáltatások kilístázása és erről való számla kiállítása
+Ügyintézés | F8 | Fizetés | 1.0 | Az óra leolvasása és az igénybevett szolgáltatások alapján a fizetendő összeg meghatározása
+Ügyintézés | F9 | Csoportos fizetés | 1.0 | Több órához tartozó számlák egyben történő kifizetése
+Ügyintézés | F10 | Csoportos számla kiállítás | 1.0 | Több órához tartozó számlák egybevonása, egy listába rendezése
+
 
 A rendszer fejlesztői: Dudás Botond, Tóth Szabina, Barna Bence.

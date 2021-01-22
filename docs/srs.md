@@ -109,6 +109,3 @@ Igénybevétel | F6 | Számlázás | 1.0 | Szolgáltatás igénybevétele eseté
 Ügyintézés | F9 | Csoportos fizetés | 1.0 | Több órához tartozó számlák egyben történő kifizetése
 Ügyintézés | F10 | Csoportos számla kiállítás | 1.0 | Több órához tartozó számlák egybevonása, egy listába rendezése
 Jogosultság | F11 | Karóra felszabadítása | 1.0 | Ügyfél távozásakor a karóra adatai alaphelyzetbe állnak
-
-
-A rendszer fejlesztői: Dudás Botond, Tóth Szabina, Barna Bence.

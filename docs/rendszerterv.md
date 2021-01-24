@@ -113,4 +113,56 @@ adatbázisból. Az eltelt időt a kliens fogja számolni a feladatoknál, hogy n
 legyenek eltérések.
 
 ## **Tesztterv**
+A tesztelések célja a rendszer és komponensei funkcionalitásának
+teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti
+szolgáltatások verifikálása
 
+**Tesztelési eljárások**<br/>
+**Unit teszt:**
+Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, hogy a
+metódusok megfelelően működnek-e.
+Ezért a metódusok megfelelő működésének biztosítására mindegyikhez írni
+kell Unit teszteket, a minél nagyobb kódlefedettséget szem előtt tartva. A
+metódusok akkor vannak kész, ha a tesztesetek hiba nélkül lefutnak az egyes
+metódusokon
+
+**Alfa teszt:**
+Fejlesztőcsapat teszteli a rendszert a felfedezett hibákat javítja, finomítja
+gyorsítja a rendszert szükség esetén
+
+**Beta teszt:**
+Kezdetleges rendszer telepítése a megrendelő által kívánt helyre és annak tesztelése egy
+héten át, problémák fellépése esetén jelezni azokat
+
+**Tesztelendő funkciók**<br/>
+**Backend Service**
+Képesnek kell lennie adatokat fogadni és küldeni a karóráknak.
+Képesnek kell lennie egy időben kiszolgálni több klienst is.
+Fel kell tudnia tölteni, és le kell tudnia kérdezni az adatbázis adatait.
+
+**Karóra**
+**Adatmegadás:**
+Elvárt működés: A megadott adatokat az óra megfelelően tárolja, szükség esetén módisítható
+**Szolgáltatások:**
+Képesnek kell lennie kommunikációt biztosítani az adatbázis és az órák között.
+A karórán tárolt adatok segíségével meg kell tagadnia korhatáros szolgáltatásokat
+
+
+## **Telepítési terv**
+- Érzékelők kihejezése a szolgáltatások igénybevételéhez
+- Megfelelő mennyiségű karóra üzembehelyezése
+- Munkatársak képzése a rendszer kezelésére
+- Állandó internetkapcsolat a karórák és a rendszer közti kpmmunikációhoz
+
+## **Karbantartási terv**
+A rendszer folyamatos üzemeltetése és karbantartása, mely
+magában foglalja a programhibák elhárítását, a belső igények változása miatti
+módosításokat, valamint a környezeti feltételek változása miatt
+megfogalmazott program-, illetve állomány módosítási igényeket
+### **Karbantartás**
+Adaptive Maintenance: A program naprakészen tartása és finomhangolása.
+Perfective Maintenance: A rendszer hosszútávú használata érdekében végzett
+módosítások, új funkciók, a szoftver teljesítményének és működési
+megbízhatóságának javítása.
+Preventive Maintenance: Olyan problémák elhárítása, amelyek még nem
+tűnnek fontosnak, de később komoly problémákat okozhatnak.
